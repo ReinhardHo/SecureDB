@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog1</class>
+ <widget class="QDialog" name="Dialog1">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>set secure informations</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>password 1:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>start index:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>240</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>differential value:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>hash iterations 1:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PW1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="S1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>210</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="D1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>240</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="H1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OKButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ok</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CancelButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>abort</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>password 2:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PW2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>130</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="H2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>hash iterations 2:</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>PW1</tabstop>
+  <tabstop>H1</tabstop>
+  <tabstop>PW2</tabstop>
+  <tabstop>H2</tabstop>
+  <tabstop>S1</tabstop>
+  <tabstop>D1</tabstop>
+  <tabstop>OKButton</tabstop>
+  <tabstop>CancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PW1</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>PW1_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PW2</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>PW2_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>S1</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>S1_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>D1</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>D1_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>H1</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>H1_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>H2</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog1</receiver>
+   <slot>H2_textEdited(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OKButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog1</receiver>
+   <slot>OKButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog1</receiver>
+   <slot>CancelButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>PW1_textEdited(QString)</slot>
+  <slot>PW2_textEdited(QString)</slot>
+  <slot>S1_textEdited(QString)</slot>
+  <slot>D1_textEdited(QString)</slot>
+  <slot>H1_textEdited(QString)</slot>
+  <slot>H2_textEdited(QString)</slot>
+  <slot>CancelButton_clicked()</slot>
+  <slot>OKButton_clicked()</slot>
+ </slots>
+</ui>
